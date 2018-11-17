@@ -2,6 +2,17 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const axios = require("axios")
+const fs = require('fs')
+
+const baseURL = "https://gateway.marvel.com"
+const api_key = "2b98cdfb6265c41152a598bb461ab0ca"
+
+axios.get(baseURL + "/443/v1/public/characters?apikey=" + api_key).then((result) => {
+  var characters = result.data
+  fs.writeFileSync(`./src/data/characters.json`, JSON.stringify(characters, ``, 2))
+})
+
 class App extends Component {
   render() {
     return (
