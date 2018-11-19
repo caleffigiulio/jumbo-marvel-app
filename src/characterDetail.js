@@ -37,7 +37,7 @@ class CharacterDetail extends Component {
   render() {
     const { error, isLoaded, comicData } = this.state;
     const name = this.props.character.name ? this.props.character.name : "[Unknown]";
-    const description = this.props.character.description ? this.props.character.description : "No Descripion provided - It seems this character prefers to keep an air of mystery around them.";
+    const description = this.props.character.description ? this.props.character.description : "No Description provided - It seems this character prefers to keep an air of mystery around them.";
     const imageURL = this.props.character.thumbnail.path.replace(/^http:\/\//i, 'https://') + "/landscape_incredible." + this.props.character.thumbnail.extension;
     return (
       <div>
