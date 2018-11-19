@@ -1,6 +1,9 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
-
+/**
+ * Returns object displaying user's current relative navigation.
+ * @param {*} props 
+ */
 const BreadCrumb = (props) => {
   return (
     <div>

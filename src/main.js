@@ -6,6 +6,10 @@ import {
   Route
 } from "react-router-dom";
 
+/**
+ * Main section in router, which performs initial fetch request for character data upon mount
+ *  then creates route objects for each character to their characterDetail component
+ */
 class Main extends Component {
   constructor(props) {
     super(props);

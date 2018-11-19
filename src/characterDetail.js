@@ -3,7 +3,10 @@ import './breadCrumb.js'
 import BreadCrumb from './breadCrumb.js';
 import ComicsList from './comicsList.js';
 
-
+/**
+ * Takes in character object, upon mount, performs fetch request for comics associated with this character
+ * displays details about character and loads and displays he comics returned from the request
+ */
 class CharacterDetail extends Component {
   constructor(props) {
     super(props);

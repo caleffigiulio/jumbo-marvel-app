@@ -4,6 +4,10 @@ import {
   Link,
 } from "react-router-dom";
 
+/**
+ * Requires an array of character objects
+ * returns a list of elements displaying names and thumbnails for these characters
+ */
 class CharacterList extends Component {
   render() {
       return (

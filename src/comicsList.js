@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 
+/**
+ * Takes in list array of comic objects
+ * returns a list of elements displaying names and images for these comics, as well as a link to the official marvel website to purchase the comic 
+ */
 class ComicsList extends Component {
   render() {
     if (this.props.error) {

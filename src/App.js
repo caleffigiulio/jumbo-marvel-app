@@ -5,7 +5,9 @@ import Main from './main.js';
 import {
   BrowserRouter
 } from "react-router-dom";
-
+/**
+ * main App frame, with static header and footer and router in between
+ */
 class App extends Component {
   render() {
     return (
