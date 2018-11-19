@@ -7,6 +7,8 @@ class ComicsList extends Component {
       return <div>Error: {this.props.error.message}</div>;
     } else if (!this.props.isLoaded) {
       return <div>Loading...</div>;
+    } else if (this.props.data.results.length < 1) {
+      return <div>No Results</div>
     } else {
       return (
           <Row className="text-center">
