@@ -15,7 +15,8 @@ class CharacterDetail extends Component {
   }
 
   componentDidMount() {
-    fetch(this.props.character.comics.collectionURI + "?limit=100&apikey=2b98cdfb6265c41152a598bb461ab0ca")
+    const url = this.props.character.comics.collectionURI.replace(/^http:\/\//i, 'https://') + "?limit=100&apikey=2b98cdfb6265c41152a598bb461ab0ca";
+    fetch(url)
       .then(res => res.json())
       .then(
         (result) => {
