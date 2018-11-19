@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://gateway.marvel.com:443/v1/public/characters?limit=100&apikey=2b98cdfb6265c41152a598bb461ab0ca")
+    fetch("https://gateway.marvel.com:443/v1/public/characters?&apikey=2b98cdfb6265c41152a598bb461ab0ca")
       .then(res => res.json())
       .then(
         (result) => {
